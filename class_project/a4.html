@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">1</div>
+    <div>2</div>
+    <div class="div3">3</div>
+    <div>
+        <div>4</div>
+        <div class="div5">5</div>
+    </div>
+    <div>6</div>
+
+    <script>
+        document.write(document.getElementById('div1').outerHTML);
+        document.write(document.getElementsByTagName('div')[1].outerHTML);
+        document.write(document.getElementsByClassName('div3')[0].outerHTML);
+        document.write('<div>');
+        document.write(document.querySelector('div div').outerHTML);
+        document.write(document.querySelector('div .div5').outerHTML);
+        document.write('</div>');
+        document.write(document.querySelectorAll('div')[6].outerHTML);
+    </script>
+</body>
+</html>

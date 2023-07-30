@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = 0;
+        var num = 0;
+        var count = 0;
+        var avg = 0;
+
+        while(num != -1){
+            num = prompt("1부터 99사이의 수를 입력하세요");
+            if(num < 0 || num > 99){
+                if(num == -1){
+                    continue;1
+                }
+                alert("error");
+            }
+            else{
+                sum += parseInt(num);
+                count++;
+            }
+        }
+        avg = sum / count;
+
+        document.write('sum = ', sum,' avg = ', avg);
+
+    </script>
+</body>
+</html>

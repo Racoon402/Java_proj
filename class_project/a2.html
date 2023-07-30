@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+    </div>
+    <script>
+        function end(){
+            clearInterval(time);
+        }
+        
+        function display(){
+            const date = new Date();
+            document.getElementsByTagName('div')[0].innerHTML = date;
+        }
+
+        var time = setInterval(display, 1000);
+
+       setTimeout(end, 60000);
+
+    </script>
+</body>
+</html>
